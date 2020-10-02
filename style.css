@@ -1,0 +1,174 @@
+body {
+  margin: 0 auto;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  padding-bottom: 1%;
+}
+
+.bg-img {
+    background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+  }
+
+.container-fluid {
+  padding: 9% 11.5% 2% 11.5%;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 2.99rem;
+  letter-spacing: -0.1rem;
+  line-height: 3rem;
+  padding-right: 20%;
+}
+
+.ml-7 {
+    margin-left: 7rem !important;
+  }
+  
+  .mt-1 {
+    margin-top: 1rem !important;
+  }
+  
+  .mt-2 {
+    margin-top: 2rem !important;
+  }
+  
+  .mt-4 {
+    margin-top: 3.5rem !important;
+  }
+
+p.description {
+  color: hsl(303, 10%, 53%);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-top: 5px;
+  margin-right: 20%;
+}
+
+.buyer-content {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 7px;
+  margin: auto;
+  width: 100%;
+  padding: 10% 9% 7%;
+}
+
+.buyer-divison p.details {
+  color: hsl(300, 24%, 96%);
+  padding-top: 1rem;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.4px;
+}
+
+.buyer-divison h6 {
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+}
+
+.buyer-divison p.verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 13px;
+  line-height: 0.7rem
+}
+
+.buyer-divison img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.buyer-sign {
+  margin-left: 1rem;
+  padding-top: 3px;
+}
+
+.rating-section {
+  background-color: hsl(300, 24%, 96%);
+  padding: 3%;
+  margin: 1rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  border-radius: 7px;
+  width: 80%;
+}
+
+.rating-section span {
+  padding-left: 1rem;
+}
+
+.rating-section :last-child {
+  font-size: 13px;
+}
+
+.ml-4 {
+  margin-left: 4rem !important;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/******************* Media Queries *******************/
+
+@media screen and (min-width: 1025px) and (max-width:1240px) {
+  /* .rating-section {
+    width: 95%;
+  } */
+
+  h1,
+  p.description {
+    padding-right: 0px !important;
+    /* text-align: left !important; */
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width:1024px) {
+  .bg-img {
+    background-image: url('./images/bg-pattern-top-mobile.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+  }
+
+  .ml-4,
+  .ml-7,
+  .mt-1,
+  .mt-2 {
+    margin-left: auto !important;
+    margin-top: 1rem !important;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: auto;
+    padding-right: 0%;
+  }
+
+  p.description {
+    padding: auto;
+    text-align: justify;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .rating-section {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+  }
+
+  .on-mobile-starts {
+    display: inline;
+    padding-bottom: 0.5rem;
+  }
+
+}
